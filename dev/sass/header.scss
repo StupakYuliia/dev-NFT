@@ -1,8 +1,60 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
+header {
+	padding: 45px 0 ;
+
+	.container {
+		display: flex;
+		align-items: center;
 	}
 }
+
+.nav-list {
+    display: flex;
+	padding: 0 29px;
+}
+
+.nav-item {
+	list-style: none;
+	margin: 0 28px;
+
+	a {
+		color: #606060;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $primary-color;
+		}
+	}
+}
+
+.header-search {
+	max-width: 348px;
+	width: 100%;
+	margin-right: 30px;
+	margin-left: auto;
+
+	input[type="search"] {
+		width: 100%;
+		border: 1px solid transparent;
+		border-radius: 16px;
+		padding: 21px 12px 21px 70px;
+		margin-right: 30px;
+		background: url(assets/img/icon-loupe.svg) 22px center no-repeat #EDEDED;
+		transition: .3s;
+
+		&:hover {
+			border: 1px solid #606060;
+		}
+
+		&:focus {
+			&::placeholder {
+				font-size: 0;
+			}
+		}
+	}
+}
+
+
+
