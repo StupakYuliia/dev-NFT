@@ -1,4 +1,58 @@
 @media screen and (max-width: 1024px) {
+	header {
+		padding: 30px 0;
+	}
+
+	.mobile-container {
+		display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 107px;
+        background-color: #000;
+		gap: 24px;
+        padding: 36px 48px 48px;
+
+		&.show {
+			display: flex;
+		}
+	}
+
+	.header-nav {
+		max-width: 348px;
+		width: 100%;
+	}
+
+	.nav-list {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.nav-item {
+		margin: 12px 0;
+		a {
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.btn-burger {
+		display: block;
+		margin-left: auto;
+	}
+
+	.header-search {
+		margin: 0;
+		input[type=search] {
+			margin: 0;
+		}
+
+		+.btn {
+			max-width: 348px;
+			width: 100%;
+		}
+	}
 }
 
 
