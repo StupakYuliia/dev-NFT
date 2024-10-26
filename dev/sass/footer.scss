@@ -1,5 +1,6 @@
 footer {
 	background-color: $primary-color;
+	margin-top: auto;
 }
 
 .footer-top {
@@ -41,14 +42,26 @@ footer {
 	display: flex;
 }
 
+.footer-social {
+	display: flex;
+	margin-left: auto;
+	gap: 48px;
+
+	a {
+		display: flex;
+		height: 22px;
+		width: 22px;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
+
 .copywrite {
 	color: #999999;
 	font-size: 17px;
 	font-weight: 500;
 }
 
-.nav-social {
-	margin-left: auto;
-	gap: 54px;
-	display: flex;
-}
+

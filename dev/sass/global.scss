@@ -8,16 +8,30 @@ body {
 	font-family: $font-primary;
 	font-size: $font-size;
 	color: $primary-color;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
 	transition: .3s;
+	color: #535353;
+
+	&:hover {
+		color: $primary-color;
+	}
 }
 
 input {
 	&:focus-visible {
 		outline: none;
 	}
+}
+
+.icon-svg,
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 .container {
@@ -64,4 +78,8 @@ input {
 			color: $secondary-color;
 		}
 	}
+}
+
+.d-none {
+	display: none;
 }
