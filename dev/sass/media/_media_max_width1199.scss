@@ -6,4 +6,22 @@
 	.nav-item {
 		margin: 0 22px;
 	}
+
+	.banner {
+		padding: 50px 0 143px;
+
+		> .container {
+			gap: 34px;
+			overflow: visible;
+		}
+
+		.swiper {
+			width: 736px;
+		}
+
+		&-slider-navigation {
+			margin-left: 100px;
+    		margin-top: -103px;
+		}
+	}
 }

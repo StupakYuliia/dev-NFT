@@ -12,6 +12,7 @@
         background-color: #000;
 		gap: 24px;
         padding: 36px 48px 48px;
+		z-index: 2;
 
 		&.show {
 			display: flex;
@@ -53,6 +54,7 @@
 			width: 100%;
 		}
 	}
+
 	footer {
 		.container {
 			position: relative;
@@ -104,6 +106,7 @@
 	.copywrite {
 		font-size: 14px;
 	}
+
 
 }
 
