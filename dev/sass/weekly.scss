@@ -1,0 +1,49 @@
+.weekly {
+	padding: 70px 0 273px;
+	background-color: $grey-primary;
+	position: relative;
+	.container {
+		max-width: 1566px;
+		overflow: hidden;
+	}
+
+	.section-title {
+		@extend .grey-secondary;
+	}
+}
+
+.carousel-weekly {
+	max-width: 814px;
+	width: 100%;
+	overflow: visible;
+
+	.swiper-slide {
+		min-width: 281px;
+	}
+}
+
+.weekly-slider-navigation {
+	@include slider-nav;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, 0);
+	bottom: 90px;
+
+	&::after {
+		@include slider-nav-separator;
+	}
+}
+
+.weekly-button-prev,
+.weekly-button-next {
+	@include slider-nav-btn;
+}
+
+.weekly-button-prev {
+	@include swiper-button-prev;
+}
+
+.weekly-button-next {
+	@include swiper-button-next;
+}

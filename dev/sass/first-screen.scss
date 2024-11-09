@@ -1,11 +1,9 @@
 .banner {
-	padding: 54px 0 83px;
+    padding: 66px 0 143px 0;
 
 	>.container {
 		display: flex;
 		gap: 100px;
-    	overflow: hidden;
-		padding-bottom: 60px;
 	}
 
 	&-content {
@@ -18,7 +16,7 @@
 		position: relative;
 		width: 195px;
 		display: inline-block;
-		color: #d2d2d2;
+		color: $grey-secondary;
 		border-top: 1px solid;
 	}
 
@@ -32,7 +30,7 @@
 
 	&-description {
 		font-size: 18px;
-		color: #676767;
+		color: $grey-accent;
 		line-height: 28px;
 		margin-bottom: 45px;
 
@@ -50,6 +48,14 @@
 		>button {
 			margin: 0 12px;
 		}
+	}
+
+	.btn-primary {
+		padding: 20px 29px;
+	}
+
+	.btn-secondary {
+		padding: 16px 21px;
 	}
 
 	&-advantages {
@@ -70,7 +76,7 @@
 		small {
 			font-size: 12px;
 			font-weight: 500;
-			color: #848586;
+			color: $grey-secondary;
 			line-height: 18px;
 		}
 	}
@@ -79,14 +85,13 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		margin-top: 19px;
-		width: 391px;
+		max-width: 391px;
 
 		&::before {
 			content: "";
 			position: absolute;
-			left: 531px; //!
-			top: -19px;
+			right: -360px;
+			top: -13px;
 			height: 402px;
 			width: 174px;
 			background: url(assets/img/banner-decoration-dot.svg);
@@ -95,10 +100,10 @@
 		&::after {
 			content: "";
 			position: absolute;
-			left: 390px;    //!
-			top: 41px;
-			height: 124px;
-			width: 128px;
+			right: -128px;
+            top: 61px;
+            height:124px;
+            width: 128px;
 			background: url(assets/img/banner-decoration-arrow.svg);
 		}
 	}
@@ -110,6 +115,7 @@
 
 	.swiper-slide {
 		transition: .7s;
+		padding-top: 70px;
 
 		img {
 			width: 100%;
@@ -121,7 +127,7 @@
             }
             &:last-child {
                 opacity: .99;
-                margin-top: calc(-100% - 19px);
+                margin-top: calc(-100% - 70px);
             }
 		}
 
@@ -139,61 +145,25 @@
 	}
 
 	&-slider-navigation {
-		position: relative;
-		height: 69px;
-		display: flex;
-		justify-content: center;
-		width: 166px;
-		border-radius: 18px;
-		box-shadow: 0px 38px 36px -15px rgb(15 15 15 / 10%), 0px 45px 36px -15px rgb(15 15 15 / 10%), -10px 20px 36px -15px rgb(15 15 15 / 10%), 10px 20px 36px -15px rgb(15 15 15 / 10%);
+		@include slider-nav;
 		margin-left: 112px;
 		margin-top: -84px;
 
 		&::after {
-			content: "";
-			width: 2px;
-			height: 26px;
-			background-color: #E6E8EC;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			border-radius: 2px;
-			z-index: 12;
+			@include slider-nav-separator;
 		}
 	}
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-	position: static;
-	height: 100%;
-	width: 83px;
-	top: 0;
-	margin: 0;
-	color: #929292;
-	background-color: #FCFCFD;
-
-	&:hover {
-		color: #23262F;
-	}
-
-	&::after {
-		display: none;
-	}
-
-	svg {
-		width: 26px;
-		height: 26px;
-	}
+	@include slider-nav-btn;
 }
 
 .swiper-button-prev {
-	left: 0;
-	border-radius: 18px 0 0 18px;
+	@include swiper-button-prev;
 }
 
 .swiper-button-next {
-	right: 0;
-	border-radius: 0 18px 18px 0;
+	@include swiper-button-next;
 }

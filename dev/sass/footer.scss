@@ -1,11 +1,11 @@
 footer {
-	background-color: $primary-color;
+	background-color: $brand-black;
 	margin-top: auto;
 }
 
 .footer-top {
 		display: flex;
-		border-bottom: 1px solid #818181;
+		border-bottom: 1px solid $grey-secondary;
 		padding: 91px 0 25px;
 }
 
@@ -32,7 +32,7 @@ footer {
 		font-weight: 500;
 
 		&:hover {
-			color: $secondary-color;
+			color: $brand-white;
 		}
 	}
 }
@@ -53,13 +53,13 @@ footer {
 		width: 22px;
 
 		&:hover {
-			color: $secondary-color;
+			color: $brand-white;
 		}
 	}
 }
 
 .copywrite {
-	color: #999999;
+	color: $grey-secondary;
 	font-size: 17px;
 	font-weight: 500;
 }

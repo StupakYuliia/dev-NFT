@@ -1,3 +1,85 @@
 @media screen and (max-width: 575px) {
 
+	.product {
+		border-radius: 16px;
+		padding: 10px 10px 14px;
+		max-width: 198px;
+
+		&-title {
+			font-size: 15px;
+			margin-bottom: 10px;
+		}
+
+		&-bid-title {
+			font-size: 10px;
+			margin-bottom: 3px;
+		}
+
+		&-bid {
+			font-size: 12px;
+			i {
+				margin-right: 1px;
+				width: 15px;
+    			height: 15px;
+			}
+		}
+
+		.btn {
+			margin: -33px 0 0 auto;
+			border-radius: 8px;
+
+			&.btn-small {
+				font-size: 10px;
+				padding: 10px 17px;
+			}
+		}
+	}
+
+	.weekly {
+		padding: 57px 0 157px;
+
+		.carousel-weekly {
+			max-width: 190px;
+
+			.swiper-slide {
+				min-width: 198px;
+			}
+		}
+
+		.section-title {
+			font-size: 30px;
+			margin-bottom: 63px;
+			display: flex;
+			justify-content: center;
+			font-weight: 600;
+		}
+
+		&-slider-navigation {
+			bottom: 55px;
+			height: 42px;
+			width: 102px;
+
+			&::after {
+				content: "";
+				width: 1px;
+				height: 16px;
+			}
+		}
+	}
+
+	.weekly-button-prev svg,
+	.weekly-button-next svg {
+		width: 16px;
+		height: 16px;
+	}
+
+	.weekly-button-prev {
+		border-radius: 10px 0 0 10px;
+		background-color: #FCFCFD;
+	}
+
+	.weekly-button-next {
+		border-radius: 0 10px 10px 0;
+		background-color: #FCFCFD;
+	}
 }

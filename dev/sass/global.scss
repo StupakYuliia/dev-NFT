@@ -5,21 +5,21 @@
 }
 
 body {
-	font-family: $font-primary;
+	font-family: $font-primary, $font-secondary;
 	font-size: $font-size;
-	color: $primary-color;
+	color: $brand-black;
 	min-height: 100vh;
     display: flex;
     flex-direction: column;
-	background-color: #F9F9F9;
+	background-color: $body-bg;
 }
 
 a {
 	transition: .3s;
-	color: #535353;
+	color: $grey-accent;
 
 	&:hover {
-		color: $primary-color;
+		color: $brand-black;
 	}
 }
 
@@ -57,25 +57,26 @@ h6 {
 }
 
 .btn {
+	font-family: $font-primary;
 	display: inline-block;
 	font-size: 16px;
-    color: $primary-color;
-	border: 2px solid;
+    color: $brand-black;
+	border: 2px solid $brand-black;
     border-radius: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 16px 29px;
+    padding: 15px 27px;
 	cursor: pointer;
 	transition: .3s;
 	text-decoration: none;
 
 	&.btn-primary {
-		background-color: $primary-color;
-		color: $secondary-color;
+		background-color: $brand-black;
+		color: $brand-white;
 
 		&:hover {
-			background-color: $secondary-color;
-			color: $primary-color;
+			background-color: $brand-white;
+			color: $brand-black;
 		}
 
 		&:active {
@@ -84,16 +85,93 @@ h6 {
 	}
 
 	&.btn-secondary {
-		background-color: $secondary-color;
-		color: $primary-color;
+		background-color: $brand-white;
+		color: $brand-black;
 
 		&:hover {
-			background-color: $primary-color;
-			color: $secondary-color;
+			background-color: $brand-black;
+			color: $brand-white;
 		}
 	}
+
+	&.btn-small {
+		font-size: 14px;
+		padding: 17px 24px;
+	}
+}
+.d-flex {
+	display: flex;
 }
 
 .d-none {
 	display: none;
 }
+
+.g-1 {
+	gap: 1rem;
+}
+
+.g-2 {
+	gap: 2rem;
+}
+
+.g-3 {
+	gap: 3rem;
+}
+
+.g-4 {
+	gap: 4rem;
+}
+
+.g-5 {
+	gap: 5rem;
+}
+
+.grey-accent {
+	color: $grey-accent;
+}
+
+.grey-secondary {
+	color: $grey-secondary;
+}
+
+.section-title {
+	@include section-title;
+	@include flex-centered;
+	font-weight: 600;
+}
+
+.icon {
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.icon-ethereum {
+	background-image: url(assets/img/icon-ethereum.svg);
+}
+.icon-ripple {
+	background-image: url(assets/img/icon-ripple.png);
+}
+
+.icon-xs {
+width: 15px;
+height: 15px;
+}
+
+.icon-sm {
+	width: 21px;
+	height: 21px;
+}
+
+.icon-md {
+	width: 31px;
+	height: 31px;
+}
+
+.icon-lg {
+	width: 45px;
+	height: 45px;
+}
+

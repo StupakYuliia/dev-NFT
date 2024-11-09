@@ -4,5 +4,83 @@ $font-secondary:  "monospace";
 $font-size: 16px;
 
 ///colors///
-$primary-color: #141416;
-$secondary-color: #fff;
+$brand-black: #141416;
+$brand-white: #fff;
+$body-bg: #F9F9F9;
+$color-black: #000;
+
+$grey-primary: #ededed;
+$grey-secondary: #848586;
+$grey-accent: #606060;
+
+$weekly-container: 1590px;
+
+@mixin section-title {
+	font-size: 46px;
+	margin-bottom: 92px;
+}
+
+@mixin flex-centered {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin slider-nav {
+	position: relative;
+	height: 69px;
+	display: flex;
+	justify-content: center;
+	width: 166px;
+	border-radius: 18px;
+	box-shadow: 0px 38px 36px -15px rgb(15 15 15 / 10%), 0px 45px 36px -15px rgb(15 15 15 / 10%), -10px 20px 36px -15px rgb(15 15 15 / 10%), 10px 20px 36px -15px rgb(15 15 15 / 10%);
+
+}
+
+@mixin slider-nav-separator {
+	content: "";
+	width: 2px;
+	height: 26px;
+	background-color: $grey-secondary;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 2px;
+	z-index: 12;
+}
+
+@mixin slider-nav-btn {
+	position: static;
+	height: 100%;
+	width: 83px;
+	margin: 0;
+	color: $grey-secondary;
+	background-color: $grey-primary;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&:hover {
+		color: #23262F;
+	}
+
+	&::after {
+		display: none;
+	}
+
+	svg {
+		width: 26px;
+		height: 26px;
+	}
+}
+
+@mixin swiper-button-prev {
+	border-radius: 18px 0 0 18px;
+}
+
+@mixin swiper-button-next {
+	border-radius: 0 18px 18px 0;
+}
+
+
+
