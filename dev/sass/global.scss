@@ -156,8 +156,8 @@ h6 {
 }
 
 .icon-xs {
-width: 15px;
-height: 15px;
+width: 17px;
+height: 17px;
 }
 
 .icon-sm {
@@ -175,3 +175,18 @@ height: 15px;
 	height: 45px;
 }
 
+.color-red {
+	color: #E23333;
+}
+
+.color-green {
+	color: #10C352;
+}
+
+.wiget-user__percent_totop {
+	@extend .color-green
+}
+
+.wiget-user__percent_tobottom {
+	@extend .color-red
+}
