@@ -237,6 +237,97 @@
 		display: none;
 	}
 
+
+
+	.top-collection {
+		padding: 77px 30px 100px;
+
+		.section-title {
+			font-size: 30px;
+			margin-bottom: 40px;
+		}
+
+		&__table {
+			margin-bottom: 50px;
+
+			thead {
+				font-size: 14px;
+			}
+
+			td {
+				padding: 7px 0;
+			}
+
+			&-user {
+				img {
+					max-width: 52px;
+					margin-right: 16px;
+					max-height: 48px;
+				}
+			}
+
+			&-name {
+				font-size: 15px;
+				margin-bottom: 7px;
+			}
+
+			&-nickname {
+				font-size: 12px;
+			}
+
+			&-volume {
+				font-size: 15px;
+
+				.icon-md {
+					width: 17px;
+					height: 17px;
+				}
+			}
+
+			&-percent {
+				font-size: 13px;
+			}
+		}
+		&__link {
+			a {
+				font-size: 12px;
+				margin-right: auto;
+			}
+		}
+	}
+
+	.top-collection__thead-percent {
+		display: none;
+	}
+
+	.top-collection__thead-price {
+		display: none;
+	}
+
+	.top-collection__thead-owners {
+		display: none;
+	}
+
+	.top-collection__thead-items {
+		display: none;
+	}
+
+	.top-collection__table-price {
+		display: none;
+	}
+
+	.top-collection__table-owners {
+		display: none;
+	}
+
+	.top-collection__table-items {
+		display: none;
+	}
+
+
+
+
+
 	footer {
 		.container {
 			position: relative;
