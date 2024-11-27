@@ -2,11 +2,13 @@ window.addEventListener("load", function (event) {
 
 	const btnBurger = document.querySelector('.btn-burger')
 	const mobileContainer = document.querySelector('.mobile-container')
-	const historyBack = document.querySelector('.history-back')
+	const linkBack = document.querySelector('.history-back')
 
-	// historyBack.addEventListener('click', function() {
-	// 	window.history.back()
-	// })
+	function historyBack() {
+		linkBack.addEventListener('click', function() {
+			window.history.back()
+		})
+	}
 
 	const togleMobileMenu =()=> {
 		mobileContainer.classList.toggle('show')
@@ -40,4 +42,5 @@ window.addEventListener("load", function (event) {
 
 	document.querySelector('.wiget') ? installWiget() : null;
 	document.querySelector('.tabs') ? installTabs() : null;
+	linkBack ? historyBack() : null;
 })

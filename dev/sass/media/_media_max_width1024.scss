@@ -324,6 +324,111 @@
 		display: none;
 	}
 
+	.profile {
+		.container {
+			padding: 0;
+		}
+
+		&__img {
+			width: 1025px;
+			margin-bottom: 95px;
+
+			img {
+				border-radius: 0;
+			}
+		}
+
+		&__avatar {
+			max-width: 138px;
+			bottom: -73px;
+			left: 40px;
+		}
+
+
+		&__wrapper {
+			flex-direction: column;
+		}
+
+		&-card {
+			max-width: 280px;
+			margin: 0 auto;
+			margin-bottom: 84px;
+
+			&__data {
+				padding-bottom: 30px;
+				margin-bottom: 32px;
+			}
+
+			&__name {
+				margin-right: 82px;
+			}
+
+			&__user-name {
+				font-size: 25px;
+				margin-bottom: 2px;
+			}
+
+			&__nick-name {
+				font-size: 13px;
+			}
+
+			&__link {
+				margin-top: 12px;
+
+				a {
+					padding: 9px 17px;
+					border-radius: 8px;
+					font-size: 11px;
+				}
+			}
+
+			&__info {
+				margin-bottom: 88px;
+
+				&-sales {
+					margin-right: 50px;
+
+					h4 {
+						line-height: 30px;
+						font-size: 24px;
+						margin-bottom: 3px;
+					}
+
+					small {
+						font-size: 8px;
+					}
+				}
+			}
+
+			&__bio {
+				padding-bottom: 64px;
+				margin-bottom: 25px;
+
+				h5 {
+					font-size: 18px;
+					margin-bottom: 5px;
+					line-height: 30px;
+				}
+
+				p {
+					font-size: 11px;
+				}
+			}
+
+			&__social {
+				gap: 50px;
+
+				a {
+					width: 12px;
+					height: 12px;
+				}
+			}
+		}
+		span.loader {
+			left: calc(100% - 50%);
+			top: 96px;
+		}
+	}
 
 
 

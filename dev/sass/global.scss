@@ -190,3 +190,75 @@ height: 17px;
 .wiget-user__percent_tobottom {
 	@extend .color-red
 }
+
+.product-md {
+	max-width: 204px;
+	padding: 10px 10px 14px;
+
+	.product-img {
+		margin-bottom: 13px;
+	}
+
+	.product-title {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	.product-bid-title {
+		font-size: 10px;
+		margin-bottom: 3px;
+	}
+
+	.product-bid {
+		font-size: 12px;
+		.icon-sm {
+			width: 15px;
+			height: 15px;
+		}
+	}
+	.btn-small {
+		font-size: 10px;
+		padding: 11px 18px;
+		border-radius: 8px;
+	}
+
+}
+
+span.loader {
+	left: calc(100% - 27%);
+    top: 96px;
+}
+
+.loader {
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	background: linear-gradient(0deg, rgba(153, 153, 153, 1) 33%, rgba(153, 153, 153, 0) 100%);
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+}
+.loader::after {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+@keyframes rotation {
+	0% {
+	transform: rotate(0deg);
+	}
+	100% {
+	transform: rotate(360deg);
+	}
+}
+
+
+

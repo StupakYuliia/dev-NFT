@@ -1,0 +1,76 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper home">
+<section class="profile">
+	<div class="container">
+		<div class="profile__img">
+			<img src="assets/img/profile-1.png" alt="">
+			<div class="profile__avatar">
+				<img src="assets/img/profile-avatar.png" alt="">
+			</div>
+		</div>
+
+		<div class="profile__wrapper">
+			<div class="profile-card">
+				<div class="profile-card__data">
+					<div class="profile-card__name">
+						<div class="profile-card__user-name">Harry K.</div>
+						<div class="profile-card__nick-name">@Harryknft</div>
+					</div>
+					<div class="profile-card__link">
+					<a href="#">Follow +</a>
+				</div>
+				</div>
+
+				<div class="profile-card__info">
+					<div class="profile-card__info-sales">
+						<h4>86 ETH</h4>
+						<small>Total Sales</small>
+					</div>
+					<div class="profile-card__info-sales">
+						<h4>12K</h4>
+						<small>Followers</small>
+					</div>
+					<div class="profile-card__info-sales">
+						<h4>587</h4>
+						<small>Followings</small>
+					</div>
+				</div>
+
+				<div class="profile-card__bio">
+					<h5>Bio</h5>
+					<p>the artist who transforms the intangible into priceless assets with their incredible NFT creations. From stunning visuals to mind-bending concepts,</p>
+				</div>
+				<nav class="profile-card__social">
+					<a href="#">
+						<svg class="icon-svg">
+							<use href="#social-instagram"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="icon-svg">
+							<use href="#social-linkedin"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="icon-svg">
+							<use href="#social-facebook"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="icon-svg">
+							<use href="#social-x"></use>
+						</svg>
+					</a>
+				</nav>
+			</div>
+			@@include('templates/tabs.html')
+			</div>
+			<span class="loader"></span>
+
+
+	</div>
+</section>
+</main>
+@@include('templates/footer.html')
+
