@@ -1,9 +1,10 @@
 @media screen and (max-width: 575px) {
 
 	.product {
-		border-radius: 16px;
-		padding: 10px 10px 14px;
-		max-width: 198px;
+		&.mobile {
+			border-radius: 16px;
+			padding: 10px 10px 14px;
+			max-width: 198px;
 
 		&-title {
 			font-size: 15px;
@@ -32,6 +33,7 @@
 				font-size: 10px;
 				padding: 10px 17px;
 			}
+		}
 		}
 	}
 
@@ -106,6 +108,7 @@
 				border-radius: 12px;
 				padding: 7px 7px 10px;
 				max-width: 155px;
+				margin: 0 auto;
 
 				&-title {
 					margin-bottom: 7px;
@@ -124,11 +127,73 @@
 					padding: 8px 13px;
 					border-radius: 5px;
 				}
+
+				.product .btn {
+					margin: -33px 0 0 auto;
+					border-radius: 8px;
+
+					&.btn-small {
+						font-size: 14px;
+						padding: 15px 25px;
+					}
+				}
 			}
 		}
 	}
 	.content__activity {
 		margin-bottom: 20px;
+	}
+
+	.explore-marketplace {
+		padding: 0 46px 164px;
+
+		.section-title {
+			font-size: 30px;
+			margin-bottom: 30px;
+			line-height: 1.25;
+		}
+
+		&__nav {
+			gap: 14px;
+			margin-bottom: 75px;
+		}
+
+		&__btn {
+			font-size: 10px;
+			padding: 10px 11px;
+			border-radius: 8px;
+
+			svg {
+				width: 16px;
+				height: 16px;
+				margin-right: .5px;
+			}
+		}
+
+		.explore-marketplace__btn_all {
+			display: none;
+		}
+
+		&__content {
+			row-gap: 35px;
+			margin-bottom: 50px;
+		}
+
+
+	}
+
+	.link-axplore-all {
+		a {
+			margin: 0 auto;
+			font-size: 12px;
+			svg.icon-svg {
+				width: 9px;
+				height: 9px;
+			}
+		}
+	}
+	.join-community {
+		padding: 0 0 145px;
 	}
 }
 

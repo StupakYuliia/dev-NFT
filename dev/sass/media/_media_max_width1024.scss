@@ -242,14 +242,16 @@
 	.top-collection {
 		padding: 77px 30px 100px;
 
+		&__wrapper {
+			margin-bottom: 50px;
+		}
+
 		.section-title {
 			font-size: 30px;
 			margin-bottom: 40px;
 		}
 
 		&__table {
-			margin-bottom: 50px;
-
 			thead {
 				font-size: 14px;
 			}
@@ -287,6 +289,23 @@
 			&-percent {
 				font-size: 13px;
 			}
+
+			&-price {
+				font-size: 15px;
+
+				.icon-md {
+					width: 17px;
+					height: 17px;
+				}
+			}
+
+			&-owners {
+				font-size: 13px;
+			}
+
+			&-items {
+				font-size: 13px;
+			}
 		}
 		&__link {
 			a {
@@ -296,35 +315,35 @@
 		}
 	}
 
-	.top-collection__thead-percent {
-		display: none;
-	}
+	.join-community {
+		padding: 0 0 157px;
 
-	.top-collection__thead-price {
-		display: none;
-	}
+		.big-circle {
 
-	.top-collection__thead-owners {
-		display: none;
-	}
+		}
 
-	.top-collection__thead-items {
-		display: none;
-	}
+		&__title {
+			font-size: 27px;
+			line-height: 26.6px;
+			margin-bottom: 14px;
+		}
 
-	.top-collection__table-price {
-		display: none;
-	}
+		&__desc {
+			font-size: 9px;
+			line-height: 15px;
+			margin-bottom: 23px;
+		}
 
-	.top-collection__table-owners {
-		display: none;
-	}
-
-	.top-collection__table-items {
-		display: none;
+		.btn {
+			font-size: 9px;
+			padding: 12px 13px;
+			line-height: 11px;
+			border-radius: 7px;
+		}
 	}
 
 	.profile {
+		overflow: hidden;
 		.container {
 			padding: 0;
 		}
@@ -424,13 +443,239 @@
 				}
 			}
 		}
+
+		.tabs .active {
+			max-width: 690px;
+			margin: 0 auto;
+		}
 		span.loader {
-			left: calc(100% - 50%);
+			left: calc(100% - 55%);
 			top: 96px;
 		}
 	}
 
 
+	.just-unleash {
+		padding: 0 27px;
+		margin-bottom: 300px;
+
+		&::after {
+			display: none;
+		}
+
+		&__content {
+			margin: 0px auto;
+		}
+
+		&-title {
+			font-size: 26px;
+			line-height: 37.1px;
+			margin-bottom: 0;
+			text-align: center;
+			white-space: nowrap;
+		}
+		&__list {
+			display: none;
+		}
+
+		&__wigets {
+			max-width: 306px;
+			&::before {
+				background: url(assets/img/just-unleash-decoration-dot-mobile.svg);
+				bottom: -64px;
+				right: -35px;
+				height: 80px;
+    			width: 191px;
+			}
+		}
+
+		.wiget {
+			&__recent-viewed {
+				padding: 11px 10px 8px;
+				border-radius: 6px;
+				display: block;
+				top: 201px;
+				right: 37px;
+				max-width: 153px;
+				max-height: 103px;
+
+				.wiget__title {
+					margin-bottom: 11px;
+					h3 {
+						font-size: 9px;
+					}
+					.layout-menu {
+						top: 4px;
+						right: 18px;
+					}
+					.layout-case__button {
+						span {
+							width: 4px;
+    						height: 4px;
+							&::before,
+							&::after {
+								width: 4px;
+    							height: 4px;
+								top: 6px;
+							}
+						}
+					}
+				}
+				.wiget-users-list {
+					max-height: 60px;
+					&::-webkit-scrollbar {
+						width: 3px;
+					}
+					&__item {
+						&:before {
+							width: 9px;
+							height: 9px;
+							font-size: 5px;
+							top: 14px;
+							left: 12px;
+						}
+					}
+				}
+				.wiget-user {
+						&__avatar {
+						&-img {
+							margin-right: 6px;
+    						width: 21px;
+						}
+					}
+					&__name {
+						font-size: 6px;
+						margin-bottom: 3px;
+					}
+					&__nick-name {
+						font-size: 5px;
+					}
+					&__price {
+						font-size: 6px;
+						margin-bottom: 3px;
+						.icon-xs {
+							width: 7px;
+							height: 7px;
+						}
+					}
+					&__percent {
+						font-size: 5px;
+					}
+				}
+			}
+			&_best-sellers {
+				display: block;
+				border-radius: 6px;
+				top: 42px;
+				padding: 12px 9px;
+				max-width: 153px;
+    			max-height: 243px;
+				.wiget__title {
+    				margin-bottom: 11px;
+					h3 {
+						font-size: 8px;
+					}
+				}
+				.wiget-users-list {
+					max-height: 192px;
+					&::-webkit-scrollbar {
+						width: 3px;
+					}
+					&__item {
+    					margin-bottom: 7px;
+						&::before {
+							width: 10px;
+    						height: 10px;
+							font-size: 5px;
+							top: 0px;
+							left: 16px;
+						}
+					}
+					.wiget-user {
+						&__avatar {
+							&-img {
+								margin-right: 5px;
+								width: 26px;
+							}
+						}
+						&__name {
+							font-size: 5px;
+						}
+						&__nick-name {
+							font-size: 5px;
+						}
+						&__btn {
+							font-size: 5px;
+							padding: 3px 6px;
+							line-height: 7px;
+							border-radius: 3px;
+							border: 1px solid #E6E8EC;
+						}
+					}
+				}
+
+			}
+			&_nev-bid {
+				display: block;
+				max-height: 40px;
+				max-width: 155px;
+				border-radius: 6px;
+				margin-top: 25px;
+				right: 26px;
+				padding: 5px 5px 4px;
+				.wiget-users-list {
+					&__item {
+						width: 144px;
+						&::before {
+							content: url(assets/img/wiget-verified-mobile.svg);
+							width: 8px;
+							height: 8px;
+							left: 23px;
+						}
+						&::after {
+							width: 3px;
+    						height: 3px;
+							top: 9px;
+						}
+					}
+					.wiget__avatar {
+						img {
+							width: 21px;
+							margin: 0 5px 0 8px;
+						}
+					}
+					.wiget__info {
+						margin-right: 6px;
+					}
+					.wiget__new-bid {
+						font-size: 6px;
+						line-height: 10px;
+					}
+					.wiget__price,
+					.wiget__date {
+						font-size: 5px;
+						line-height: 9px;
+					}
+					.wiget__product {
+						img {
+							width: 29px;
+						}
+					}
+				}
+			}
+		}
+
+		.btn {
+			position: relative;
+			font-size: 11px;
+    		line-height: 13.8px;
+			border-radius: 9px;
+			padding: 15px;
+			bottom: -434px;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
 
 
 	footer {

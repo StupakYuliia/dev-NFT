@@ -6,6 +6,7 @@
     padding: 14px 14px 20px;
 	display: flex;
 	flex-direction: column;
+	border: 1px solid #F1F5F9;
 
 	&-img {
 		margin-bottom: 19px;
@@ -24,11 +25,14 @@
 		color: $grey-secondary;
 	}
 
-	&-bid {
+	.product-bid {
 		display: flex;
 		line-height: 150%;
+		font-size: 16px;
 		i {
 			margin-right: 2px;
+		width: 21px;
+		height: 21px;
 		}
 	}
 	.btn {

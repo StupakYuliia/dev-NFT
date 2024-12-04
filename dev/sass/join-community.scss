@@ -1,0 +1,179 @@
+.join-community {
+
+	padding: 0 94px 237px;
+
+	.container {
+		position: relative;
+		justify-content: center;
+    	display: flex;
+
+	}
+
+	.big-circle {
+		min-width: 519px;
+		display: flex;
+		margin: 0 auto;
+		max-width: 1180px;
+   		max-height: 1160px;
+	}
+
+	.big-circle__planet-1,
+	.big-circle__planet-2,
+	.big-circle__planet-3,
+	.big-circle__planet-4,
+	.big-circle__planet-5 {
+		offset-path: path('M1054.5 324.5C928.5 109.5 799.5 66.6742 618.181 52.6996C402.395 36.0686 246.657 143.04 139.68 305.699C32.7038 468.359 34.1784 683.2 139.681 862.2C245.183 1041.2 443.074 1121.04 645.926 1106.7C848.777 1092.36 974 948.5 1035.5 862.2C1097 775.899 1180.5 539.5 1054.5 324.5Z');
+		animation: big-circle__planet-1 50s reverse linear infinite;
+		offset-anchor: -4% 3%;
+	}
+
+	.big-circle__planet-2 {
+		animation: big-circle__planet-2 40s reverse linear infinite;
+	}
+
+	.big-circle__planet-3 {
+		animation: big-circle__planet-3 30s reverse linear infinite;
+	}
+
+	.big-circle__planet-4 {
+		animation: big-circle__planet-4 20s reverse linear infinite;
+	}
+
+	.big-circle__planet-5 {
+		animation: big-circle__planet-5 10s reverse linear  infinite;
+	}
+
+	.small-circle__planet-1,
+	.small-circle__planet-2,
+	.small-circle__planet-3,
+	.small-circle__planet-4 {
+		offset-path: path('M953.4 371.5C896.405 255.499 757.396 167 582.4 167C407.404 167 291.396 268.5 228.4 371.5C165.405 474.499 144.404 641 228.4 782.5C312.396 924 438.905 979 582.4 991.5C725.896 1004 868.895 934.5 953.4 782.5C1037.91 630.5 1010.4 487.5 953.4 371.5Z');
+		animation: small-circle__planet-1 25s reverse linear infinite;
+		offset-anchor: -4% 3%;
+	}
+
+	.small-circle__planet-2 {
+		animation: small-circle__planet-2 20s reverse linear infinite;
+	}
+
+	.small-circle__planet-3 {
+		animation: small-circle__planet-3 15s reverse linear infinite;
+	}
+
+	.small-circle__planet-4 {
+		animation: small-circle__planet-4 5s reverse linear infinite;
+	}
+
+	@keyframes big-circle__planet-1 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes big-circle__planet-2 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes big-circle__planet-3 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes big-circle__planet-4 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes big-circle__planet-5 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes small-circle__planet-1 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes small-circle__planet-2 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes small-circle__planet-3 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+	@keyframes small-circle__planet-4 {
+		0% {
+			offset-distance: 0%;
+		}
+		100% {
+			offset-distance: 100%;
+		}
+	}
+
+	&__content {
+		max-width: 597px;
+		position: absolute;
+		top: calc(100% - 50%);
+    	left: calc(100% - 50%);
+    	transform: translate(-50%, -50%);
+	}
+
+	&__wrapper {
+		max-width: 279px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		font-size: 45px;
+		font-weight: 700;
+		line-height: 54.4px;
+		margin-bottom: 24px;
+		text-transform: capitalize;
+		text-align: center;
+		span {
+			color: #C5C5C5;
+		}
+	}
+
+	&__desc {
+		font-size: 18px;
+		line-height: 32px;
+		margin-bottom: 49px;
+		text-align: center;
+	}
+
+	.btn {
+		margin: 0 auto;
+		display: flex
+	;
+	}
+}
+
+

@@ -1,9 +1,24 @@
 .top-collection {
     padding: 236px 96px 100px;
 
+	&__wrapper {
+		overflow-x: auto;
+		margin-bottom: 85px;
+
+		&::-webkit-scrollbar {
+			background: transparent;
+			height: 7px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: $grey-secondary;
+			border-radius: 25px;
+		}
+	}
+
 	&__table {
 		width: 100%;
-		margin-bottom: 85px;
+		min-width: 690px;
 
 		thead {
 			color: #848586;
@@ -73,34 +88,6 @@
 		&-items {
 			font-size: 23px;
 			font-weight: 500;
-		}
-	}
-
-	&__link {
-		display: flex;
-
-		a {
-			font-size: 17px;
-			margin-left: auto;
-			text-decoration: none;
-			position: relative;
-			color: #acadb9;
-
-			svg.icon-svg {
-				width: 14px;
-				height: 14px;
-				color: transparent;
-				stroke: #ACADB9;
-				transition: .3;
-			}
-
-			&:hover {
-				color: $brand-black;
-
-				.icon-svg use {
-					stroke: $brand-black;
-				}
-			}
 		}
 	}
 }

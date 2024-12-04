@@ -190,6 +190,9 @@ height: 17px;
 .wiget-user__percent_tobottom {
 	@extend .color-red
 }
+.wiget-user__percent_zero {
+	color: $grey-secondary;
+}
 
 .product-md {
 	max-width: 204px;
@@ -224,6 +227,33 @@ height: 17px;
 
 }
 
+.link-axplore-all {
+	display: flex;
+
+	a {
+		font-size: 17px;
+		margin-left: auto;
+		text-decoration: none;
+		position: relative;
+		color: #acadb9;
+
+		svg.icon-svg {
+			width: 14px;
+			height: 14px;
+			color: transparent;
+			stroke: #ACADB9;
+		}
+
+		&:hover {
+			color: $brand-black;
+
+			.icon-svg use {
+				stroke: $brand-black;
+			}
+		}
+	}
+}
+
 span.loader {
 	left: calc(100% - 27%);
     top: 96px;
@@ -249,7 +279,7 @@ span.loader {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	background: #FFFFFF;
+	background: #F9F9F9;
 }
 @keyframes rotation {
 	0% {

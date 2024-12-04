@@ -23,7 +23,42 @@
     		margin-top: -103px;
 		}
 	}
-	.wiget {
-		transform: translate(135%, 50%);
+	.weekly {
+		.wiget {
+			transform: translate(135%, 50%);
+		}
+	}
+
+
+	.just-unleash {
+		.container {
+			flex-direction: column;
+		}
+
+		&__content {
+			margin: 0px auto 100px;
+		}
+
+		&__wigets {
+			margin: 0 auto;
+
+			&::before {
+				right: -17px;
+    			bottom: -29px;
+			}
+		}
+
+		.wiget{
+			&_best-sellers {
+				margin: 0 auto;
+			}
+			&__recent-viewed {
+				right: -42px;
+			}
+			&_nev-bid {
+				right: 109px;
+			}
+		}
+
 	}
 }

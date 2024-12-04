@@ -1,0 +1,44 @@
+.explore-marketplace {
+    padding: 0 96px 103px;
+
+	&__nav {
+		display: flex;
+		gap: 22px;
+		justify-content: center;
+		margin-bottom: 100px;
+	}
+
+	&__btn {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 1.6;
+		padding: 16px 26px;
+		border-radius: 13px;
+		border: 2px solid $brand-black;
+		background-color: transparent;
+		display: flex;
+
+		&:hover {
+			background-color: $color-black;
+			color: $brand-white;
+		}
+
+		svg {
+			width: 25px;
+			height: 25px;
+			margin-right: 1px;
+		}
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+    	row-gap: 68px;
+    	column-gap: 40px;
+		margin-bottom: 103px;
+	}
+	.product {
+		min-width: 281px;
+	}
+}

@@ -18,6 +18,7 @@ $weekly-container: 1590px;
 @mixin section-title {
 	font-size: 46px;
 	margin-bottom: 92px;
+	text-align: center;
 }
 
 @mixin flex-centered {
@@ -81,6 +82,3 @@ $weekly-container: 1590px;
 @mixin swiper-button-next {
 	border-radius: 0 18px 18px 0;
 }
-
-
-

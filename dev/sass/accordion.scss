@@ -1,0 +1,39 @@
+/*delete*/
+.accordion {
+	border: 1px solid;
+	padding: 24px;
+	&-item {
+		border: 1px solid;
+		padding: 12px;
+		&__button {
+			width: 100%;
+			text-align: left;
+			border: 1px solid;
+			padding: 12px;
+			margin-bottom: 12px;
+		}
+		&__content {
+			padding: 12px;
+			border: 1px solid;
+		}
+	}
+}
+
+/*custom*/
+.accordion {
+	width: 100%;
+	&-item {
+		&__content {
+			display: none;
+		}
+
+		&.active {
+			&__button {
+				background-color: rgb(105, 255, 160);
+			}
+			.accordion-item__content {
+				display: block;
+			}
+		}
+	}
+}

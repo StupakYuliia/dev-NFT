@@ -10,6 +10,13 @@
 	.section-title {
 		@extend .grey-secondary;
 	}
+
+	.wiget {
+		position: absolute;
+		right: 50%;
+    	bottom: 0px;
+		transform: translate(168%, 50%);
+	}
 }
 
 .carousel-weekly {

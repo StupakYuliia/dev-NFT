@@ -1,0 +1,320 @@
+.just-unleash {
+    padding-top: 116px;
+	position: relative;
+	margin-bottom: 208px;
+
+	.container {
+		display: flex;
+	}
+
+	&::after {
+		content: "";
+		left: 96px;
+		position: absolute;
+		width: calc(100% - 192px);
+		height: 1px;
+		background: #CBCBCB;
+		top: 0;
+	}
+
+	&__content {
+		max-width: 461px;
+		width: 100%;
+		margin-right: 102px;
+	}
+
+	&-title {
+		font-size: 45px;
+		font-weight: 600;
+		line-height: 54.4px;
+		margin-bottom: 45px;
+	}
+	.title__main {
+		color: #C5C5C5;
+	}
+
+	.just-unleash__list {
+		margin-bottom: 70px;
+	}
+
+	.just-unleash__item {
+		position: relative;
+		font-size: 16px;
+		line-height: 32px;
+		margin-bottom: 12px;
+		color: $brand-black;
+		margin-left: 27px;
+
+		&::before {
+			content: "";
+			width: 20px;
+			height: 20px;
+			background-color: $color-black;
+			position: absolute;
+			top: 5px;
+			left: -26px;
+			border-radius: 50%;
+		}
+
+		&::after {
+			content: "";
+			display: inline-block;
+			border-left: 2px solid $brand-white;
+			border-bottom: 2px solid $brand-white;
+			top: 10px;
+			left: -22px;
+			position: absolute;
+			width: 9px;
+			height: 4px;
+			transform: rotate(-53deg);
+		}
+	}
+
+	.just-unleash__item:last-child {
+		margin-bottom: 0;
+	}
+
+	.btn {
+		font-size: 15px;
+		line-height: 18.5px;
+		text-transform: capitalize;
+
+
+		&:hover {
+			background-color: $brand-white;
+			color: $brand-black;
+			.icon-svg use {
+				stroke: $brand-black;
+			}
+		}
+
+		.icon-svg {
+			width: 18px;
+			height: 10px;
+			stroke: white;
+			color: transparent;
+		}
+	}
+
+	&__wigets {
+		display: flex;
+		max-width: 836px;
+    	width: 100%;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: -104px;
+			bottom: -13px;
+			height: 173px;
+			width: 400px;
+			background: url(assets/img/just-unleash-decoration-dot.svg);
+		}
+
+
+		.wiget {
+			&__recent-viewed {
+				z-index: 1;
+				margin-right: -168px;
+				max-width: 322px;
+				position: relative;
+				top: 347px;
+				max-height: 217px;
+
+				.wiget__title {
+					h3 {
+						font-size: 18px;
+					}
+				}
+
+				.wiget-users-list {
+					max-height: 108px;
+					&__item {
+						margin-bottom: 17px;
+					}
+				}
+
+				.wiget-user {
+					&__name {
+						font-size: 13px;
+					}
+					&__avatar {
+						&-img {
+							margin-right: 13px;
+							width: 45px;
+						}
+					}
+					&__nick-name {
+						font-size: 11px;
+					}
+
+					&__price {
+						font-size: 13px;
+						margin-bottom: 6px;
+						.icon-xs {
+							width: 15px;
+							height: 15px;
+						}
+					}
+					&__percent {
+						font-size: 12px;
+					}
+				}
+			}
+
+
+
+			&_best-sellers {
+				max-width: 322px;
+    			max-height: 510px;
+				padding: 26px 20px 25px 17px;
+
+				.wiget__title {
+					margin-bottom: 23px;
+					h3 {
+						font-size: 18px;
+					}
+				}
+
+				.wiget-users-list {
+					max-height: 417px;
+					&__item{
+						margin-bottom: 15px;
+						&::before {
+							content: counter(counterCustomName) "";
+							background-color: #141416;
+							color: #fff;
+							top: 0;
+							right: 0;
+						}
+					}
+					.wiget-user {
+						&__avatar {
+							&-img {
+								margin-right: 10px;
+								width: 55px;
+							}
+						}
+						&__name {
+							font-size: 12px;
+						}
+						&__nick-name {
+							font-size: 10px;
+						}
+					}
+				}
+			}
+			&-user__btn {
+				font-size: 12px;
+				font-weight: 700;
+				padding: 7px 14px;
+				line-height: 14px;
+				border-radius: 7px;
+				border: 2px solid #E6E8EC;
+				background-color: transparent;
+				margin-left: auto;
+				transition: .3s;
+
+				&:hover {
+					background-color: #000;
+					color: #fff;
+					border: none;
+				}
+
+				&_unfollow {
+					background-color: #E6E8EC;
+				}
+			}
+
+			&_nev-bid {
+				margin-top: -41px;
+				max-height: 84px;
+				margin-left: -95px;
+				z-index: 1;
+				max-width: 325px;
+				padding: 12px;
+				.wiget {
+					&-users-list {
+						overflow: visible;
+						&__item {
+							display: flex;
+							width: 302px;
+    						justify-content: space-between;
+
+							&:after {
+								content: "";
+								width: 8px;
+								height: 8px;
+								background-color: $brand-black;
+								border-radius: 50%;
+								position: absolute;
+								top: 20px;
+								left: 0;
+							}
+
+							&::before {
+								content: url(assets/img/wiget-verified.svg);
+								counter-increment: counterCustomName;
+								width: 17px;
+								height: 17px;
+								position: absolute;
+								top: 2px;
+    							left: 53px;
+
+							}
+						}
+					}
+
+					&__avatar {
+						img {
+							margin: 0 12px 0 19px;
+							width: 45px;
+						}
+					}
+
+					&__info {
+						margin-right: 14px;
+					}
+
+					&__new-bid {
+						font-size: 13px;
+						font-weight: 500;
+						color: $brand-black;
+						line-height: 22px;
+
+						span {
+							color: #949494;
+						}
+					}
+
+					&__price {
+						font-size: 11px;
+						font-weight: 600;
+						line-height: 19px;
+						color: $brand-black;
+					}
+
+					&__date {
+						font-size: 11px;
+						line-height: 19px;
+						color: #949494;
+					}
+
+					&__produc {
+						img {
+							width: 60px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+

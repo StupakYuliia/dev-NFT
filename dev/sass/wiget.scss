@@ -1,13 +1,11 @@
 .wiget {
-	position: absolute;
-    padding: 26px 24px 21px;
+	padding: 26px 24px 21px;
     background-color: #fff;
     border-radius: 16px;
     max-width: 365px;
     width: 100%;
-    right: 50%;
-    bottom: 0px;
-    transform: translate(168%, 50%);
+	position: relative;
+	border: 2px solid #EDF2F7;
 
 	&__title {
 		display: flex;
