@@ -26,6 +26,7 @@ function accordionInstall() {
 				})
 
 				thisAccordionItem.classList.add('active')
+
 			}
 		})
 	})
