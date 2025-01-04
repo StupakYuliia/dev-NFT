@@ -27,7 +27,13 @@ header {
 		font-weight: 500;
 		text-transform: uppercase;
 
-		&:hover {
+		&:hover,
+		&.active {
+			color: $brand-black;
+		}
+	}
+	&.active {
+		a {
 			color: $brand-black;
 		}
 	}

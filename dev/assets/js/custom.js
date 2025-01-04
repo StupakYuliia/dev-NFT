@@ -5,6 +5,15 @@ window.addEventListener("load", function (event) {
 	const linkBack = document.querySelector('.history-back')
 	const wigetUserPercent = document.querySelectorAll('.wiget-user__percent')
 
+	const navLinks = document.querySelectorAll('.nav-link');
+	const currentPage = window.location.pathname.split('/').pop();
+
+	navLinks.forEach(link => {
+		if (link.getAttribute('href') === currentPage) {
+			link.classList.add('active');
+		}
+	});
+
 	wigetUserPercent.forEach(item => {
         let string = item.textContent
         let stringComa = /,/gi;
@@ -64,3 +73,10 @@ window.addEventListener("load", function (event) {
 	document.querySelector('.tabs') ? installTabs() : null;
 	document.querySelector('.accordion') ? accordionInstall() : null;
 })
+
+$(document).ready(function() {
+	$('select').niceSelect();
+});
+
+$('.input-size').mask('0000x0000');
+

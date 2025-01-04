@@ -1,0 +1,266 @@
+.product-detail {
+    padding: 100px 0 160px;
+
+	&__title {
+		display: flex;
+		margin-bottom: 55px;
+		align-items: center;
+
+		.history-back {
+			position: relative;
+			width: 37px;
+			height: 37px;
+			border-radius: 37px;
+			margin-right: 35px;
+			background-color: #E6E8EC;
+			border: none;
+
+			&:after {
+				content: "";
+    			width: 7px;
+    			height: 7px;
+    			border-bottom: 4px solid #000;
+    			border-left: 4px solid #000;
+    			top: 12px;
+    			left: 15px;
+    			position: absolute;
+    			transform: rotate(45deg);
+			}
+		}
+
+		h3 {
+			font-size: 31px;
+			font-weight: 600;
+			line-height: 27.6px;
+		}
+	}
+
+	&__card {
+		display: flex;
+    	padding: 38px 38px 38px 37px;
+    	background-color: #FAFAFA;
+    	box-shadow: 18px 18px 61px 0 rgba(0, 0, 0, 0.12);
+    	border-radius: 24px;
+		margin-bottom: 133px;
+	}
+
+	&__img {
+		margin-right: 24px;
+    	max-width: 564px;
+    	height: 560px;
+    	width: 100%;
+	}
+
+	&__content {
+		max-width: 474px;
+		width: 100%;
+		margin-left: auto;
+
+		h2 {
+			font-size: 51px;
+			font-weight: 600;
+			line-height: 31.8px;
+			margin-bottom: 30px;
+		}
+
+		p {
+			font-size: 19px;
+			line-height: 29.1px;
+			color: #888888;
+			max-width: 400px;
+			margin-bottom: 71px;
+		}
+	}
+
+	&__info-on-persons {
+		display: flex;
+		margin-bottom: 64px;
+	}
+
+	&__created,
+	&__owned {
+		display: flex;
+		margin-right: 80px;
+		align-items: center;
+		height: 66px;
+
+		img {
+			max-width: 66px;
+			height: 66px;
+			margin-right: 17px;
+		}
+	}
+
+	&__owned {
+		margin-right: 0;
+	}
+
+	&__created-name,
+	&__owned-name {
+		font-size: 26px;
+		font-weight: 500;
+		line-height: 29px;
+		max-width: 129px;
+
+		span {
+			font-size: 18px;
+			font-weight: 400;
+			white-space: nowrap;
+		}
+	}
+
+	&__bid-info {
+		display: flex;
+		margin-bottom: 55px;
+	}
+
+	&__current-bid {
+		max-width: 103px;
+		font-size: 33px;
+    	font-weight: 600;
+
+		span {
+			font-size: 18px;
+    		font-weight: 400;
+    		white-space: nowrap;
+    		margin-bottom: 7px;
+    		display: inline-block;
+			color: #8C8C8C;
+		}
+
+		.icon-md {
+			width: 35px;
+			height: 35px;
+			margin-left: -7px;
+		}
+
+		&-data {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	&__end-date {
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+		font-size: 19px;
+    	line-height: 30.2px;
+
+		span {
+			font-size: 18px;
+    		font-weight: 400;
+    		margin-bottom: 15px;
+    		display: inline-block;
+			color: #8C8C8C;
+		}
+	}
+
+	.btn {
+		font-size: 18px;
+    	width: 100%;
+    	color: $brand-white;
+    	border-radius: 20px;
+    	line-height: 28.2px;
+    	font-weight: 700;
+    	text-transform: capitalize;
+    	padding: 25px 0;
+    	display: flex
+;
+    align-items: center;
+    justify-content: center;
+
+		.icon-svg {
+			width: 22px;
+			height: 22px;
+			margin-right: 16px;
+		}
+	}
+
+	&__title-cards {
+		font-size: 31px;
+		font-weight: 600;
+		color: #C3C3C3;
+		line-height: 27.6px;
+		margin-bottom: 44px;
+	}
+
+	&__cards {
+		display: flex;
+
+		.product {
+			margin-right: 42px;
+			border-radius: 17px;
+    		max-width: 215px;
+    		padding: 14px;
+    		border: none;
+    		box-shadow: 17px 12px 60px 0 rgba(97, 97, 97, 0.25);
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&-img {
+				margin-bottom: 7px;
+				height: 164px;
+    			max-width: 188px;
+
+				img {
+					width: 100%;
+					height: 164px;
+				}
+			}
+			&-running-title {
+				font-size: 14px;
+				font-weight: 700;
+				line-height: 22px;
+				margin-bottom: 7px;
+			}
+
+			&-title {
+				font-size: 18px;
+				margin-bottom: 7px;
+			}
+
+			&-wrapper {
+				display: flex;
+			}
+
+			&-bid {
+				line-height: 26.3px;
+				font-size: 18px;
+				font-weight: 500;
+				align-items: center;
+
+				i {
+					margin: 0 5px 0 -4px;
+				}
+			}
+
+			&-likes {
+				margin-right: 10px;
+				margin-left: auto;
+				font-size: 13px;
+				font-weight: 600;
+				line-height: 18.6px;
+				color: #888888;
+				align-items: center;
+				display: flex;
+				position: relative;
+
+				&::before {
+					content: "";
+					position: absolute;
+					top: 6px;
+					left: -18px;
+					width: 15px;
+					height: 13px;
+					background: url(assets/img/icon-heart.png) no-repeat;
+				}
+			}
+		}
+	}
+
+
+}

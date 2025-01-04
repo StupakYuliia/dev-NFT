@@ -1,0 +1,100 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="page-sell">
+<section class="nft-form">
+	<div class="container">
+		<h2 class="section-title">Create Your NFT</h2>
+		<div class="content d-flex">
+			<form class="registration-form">
+				<fieldset>
+					<h5>Name</h5>
+					<input class="icon-pensil" type="text" placeholder="ArtWork Name">
+				</fieldset>
+				<fieldset>
+					<h5>Description</h5>
+					<textarea class="icon-pensil" placeholder="Enter Your Description"></textarea>
+				</fieldset>
+				<fieldset class="d-flex g-2">
+					<div class="registration-form__wrapper">
+						<h5>Royalty</h5>
+					<select name="royalty">
+						<option value="royalty">Royalty</option>
+						<option value="10">10%</option>
+						<option value="20">20%</option>
+						<option value="30">30%</option>
+						<option value="40">40%</option>
+						<option value="50">50%</option>
+						<option value="60">60%</option>
+						<option value="70">70%</option>
+						<option value="80">80%</option>
+						<option value="90">90%</option>
+					</select>
+					</div>
+					<div class="registration-form__wrapper">
+						<h5>Size</h5>
+						<input type="text" class="input-size" placeholder="Ex - 100 x 100">
+					</div>
+				</fieldset>
+				<fieldset>
+					<h5>Tags</h5>
+					<input class="icon-pensil" type="text" placeholder="Beautiful Castle, Monkeys ETC">
+				</fieldset>
+				<fieldset class="d-flex">
+					<div class="wrapper-price">
+						<h5>Price</h5>
+						<div class="wrapper-price__input">
+							<select name="price">
+								<option value="eth">ETH</option>
+								<option value="bts">BTC</option>
+								<option value="sol">SOL</option>
+								<option value="doge">DOGE</option>
+								<option value="xrp">XRP</option>
+							</select>
+							<input type="text" placeholder="0.00007 ETC">
+						</div>
+					</div>
+					<div class="registration-form__wrapper mleft-auto">
+						<h5>In Stock</h5>
+					<select name="in-stock" id="">
+						<option value="one">001</option>
+						<option value="five">005</option>
+						<option value="ten">010</option>
+						<option value="fifteen">015</option>
+						<option value="twenty">020</option>
+					</select>
+					</div>
+				</fieldset>
+				<div class="toggle-checkboxs">
+					<div class="toggle-checkbox">
+						<input id="put-on-sale" type="checkbox" name="put-on-sale">
+						<label for="put-on-sale">Put On Sale <span>People Will Bids On Your NFT Project</span></label>
+					</div>
+					<div class="toggle-checkbox">
+						<input id="direct-salee" type="checkbox" name="direct-salee">
+						<label for="direct-salee">Direct Sale <span>No Bids - Only Direct Salling</span></label>
+					</div>
+				</div>
+				<button class="registration-form__btn">Create</button>
+			</form>
+			<div class="content-drop-zona">
+				<input id="file-input" type="file"  accept="image/*" style="display: none;">
+				<img id="image-preview">
+				<div id="drop-zone" class="control-input control-input--drop-zone">
+					<!-- for в label теперь должен вести к id инпута type=file -->
+					<label for="file-input">
+						<svg class="icon-svg">
+							<use href="#icon-upload"></use>
+						</svg>
+						PNG, GIF, WEBP, MP4 or MP3. Max 1Gb.
+					</label>
+					<div data-for-dropzone></div>
+				</div>
+				<button class="btn btn-primary">Upload</button>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+@@include('templates/footer.html')
+

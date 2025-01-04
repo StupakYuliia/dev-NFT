@@ -798,6 +798,429 @@
 	}
 
 
+	.nft-form {
+		padding: 80px 0 125px;
+
+		.section-title {
+			display: none;
+		}
+
+		.content {
+			flex-direction: column-reverse;
+			align-items: center;
+
+			.content-drop-zona {
+				margin: 0 0 91px 0;;
+
+				.control-input {
+					max-width: 311px;
+					max-height: 375px;
+					margin-top: -449px;
+					border-radius: 23px;
+					margin-bottom: 61px;
+					box-shadow: 0px 61px 61px -46px rgba(15, 15, 15, 0.1);
+					padding: 145px 89px;
+
+					label {
+						font-size: 11px;
+						line-height: 19px;
+						width: 132px;
+
+						.icon-svg {
+							max-width: 38px;
+							height: 38px;
+							margin: 0 auto 10px;
+						}
+					}
+				}
+
+				#image-preview {
+					margin: 0 0 61px;
+					max-width: 313px;
+					height: 389px;
+				}
+
+				.btn {
+					font-size: 14px;
+					line-height: 22px;
+					padding: 19px 85px;
+					border-radius: 15px;
+				}
+			}
+		}
+
+		.registration-form {
+			margin: 0;
+			max-width: 313px;
+
+			fieldset {
+				h5 {
+					font-size: 13px;
+					margin-bottom: 13px;
+				}
+
+				input,
+				textarea {
+					padding: 13px 14px 14px 17px;
+					border-radius: 7px;
+					margin-bottom: 23px;
+					font-size: 9px;
+				}
+
+				input[type="text"] {
+					height: 40px;
+				}
+
+				textarea {
+					height: 106px;
+    				max-height: 150px;
+				}
+
+				::placeholder {
+					font-size: 9px;
+				}
+
+				.input-size {
+					max-width: 95px;
+					height: 40px;
+				}
+
+				.icon-pensil {
+					background: url(assets/img/icon-pensil-mobile.svg) top 13px right 14px no-repeat #EFEFEF;
+				}
+
+				.wrapper-price {
+					max-width: 313px;
+
+					&__input {
+						border-radius: 7px;
+						margin-right: 23px;
+
+						input {
+							max-width: 118px;
+							min-width: 0px;
+						}
+					}
+				}
+
+				.nice-select {
+					font-size: 9px;
+					padding: 0px 45px 0 17px;
+					width: 95px;
+					height: 41px;
+					border-radius: 8px;
+				}
+			}
+
+			.toggle-checkboxs {
+				margin: 46px 0 76px;
+
+				.toggle-checkbox {
+					margin-bottom: 26px;
+
+					[type="checkbox"] {
+						+ label {
+							font-size: 13px;
+
+							span {
+								font-size: 9px;
+								margin-top: 8px;
+							}
+
+							&:before {
+								width: 35px;
+								height: 19px;
+								top: 50%;
+								right: 0;
+								border-radius: 13px;
+								transform: translate(0, -50%);
+								transition: 0.3s;
+							}
+
+							&:after {
+								width: 13px;
+								height: 13px;
+								top: 50%;
+								right: 19px;
+								transform: translate(0, -50%);
+								transition: 0.3s;
+							}
+						}
+
+						&:checked {
+							+ label {
+								&::after {
+									right: 3px;
+								}
+							}
+						}
+					}
+
+				}
+			}
+
+			&__btn {
+				font-size: 14px;
+				line-height: 21px;
+				border-radius: 15px;
+				padding: 18px 0;
+			}
+		}
+	}
+
+
+	.product-detail {
+		padding: 69px 0 125px;
+
+		.container {
+			padding: 0 32px;
+		}
+
+		&__title {
+			display: none;
+		}
+
+		&__card {
+			flex-direction: column;
+			padding: 15px 15px 27px;
+			box-shadow: 0 3px 42px 0 rgba(197, 197, 197, 0.25);
+			border-radius: 14px;
+			max-width: 310px;
+        	margin: 0 auto 85px;
+		}
+
+		&__img {
+			margin-right: 0;
+			max-width: 279px;
+			height: 245px;
+			margin-bottom: 20px;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&__content {
+			max-width: 279px;
+
+			h2 {
+				font-size: 16px;
+				line-height: 22.6px;
+				margin-bottom: 6px;
+			}
+
+			p {
+				font-size: 13px;
+				line-height: 20px;
+				max-width: 267px;
+				margin-bottom: 58px;
+			}
+		}
+
+		&__info-on-persons {
+			margin-bottom: 43px;
+		}
+
+		&__created,
+		&__owned {
+			margin-right: 40px;
+		    height: 33px;
+
+			img {
+				max-width: 33px;
+				height: 33px;
+				margin-right: 9px;
+			}
+		}
+
+		&__owned {
+			margin-right: 0;
+		}
+
+		&__created-name,
+		&__owned-name {
+			font-size: 13px;
+    		line-height: 20px;
+    		max-width: 66px;
+
+			span {
+				font-size: 9px;
+			}
+		}
+
+		&__bid-info {
+			margin-bottom: 46px;
+		}
+
+		&__current-bid {
+			max-width: 61px;
+			font-size: 19px;
+			span {
+				font-size: 11px;
+				margin-bottom: 4px;
+			}
+			.icon-md {
+				width: 21px;
+				height: 21px;
+				margin-left: -5px;
+			}
+		}
+
+		&__end-date {
+			font-size: 11px;
+			line-height: 17.9px;
+
+			span {
+				font-size: 11px;
+				margin-bottom: 10px;
+				line-height: 13px;
+			}
+		}
+
+		.btn {
+			font-size: 11px;
+			border-radius: 11px;
+			line-height: 16.4px;
+			padding: 14px 0;
+
+			.icon-svg {
+				width: 13px;
+				height: 13px;
+				margin-right: 10px;
+			}
+		}
+
+		&__title-cards {
+			font-size: 25px;
+			margin-bottom: 50px;
+			justify-content: center;
+			display: flex;
+		}
+
+		&__cards {
+			flex-direction: column;
+		}
+
+		.mobile {
+			margin: 0 auto 35px;
+
+			&:last-child {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.custom-modal {
+		&__body {
+			max-width: 310px;
+			border-radius: 15px;
+			padding: 32px 13px 29px;
+
+			h2 {
+				font-size: 14px;
+				line-height: 20.7px;
+				margin-bottom: 2px;
+			}
+		}
+
+		&__date {
+			font-size: 10px;
+			line-height: 12.7px;
+			margin-bottom: 13px;
+		}
+
+		&__cards {
+			margin-bottom: 32px;
+		}
+
+		&__card {
+			padding: 13px 36px 13px 13px;
+			margin-bottom: 13px;
+			box-shadow: -4px 8px 14px 0 rgba(16, 16, 16, 0.15);
+			border-radius: 8px;
+		}
+
+		&__avatar {
+			max-width: 45px;
+			margin-right: 11px;
+
+			&:before {
+				top: -1px;
+				right: -4px;
+				width: 15px;
+				height: 15px;
+				border: 2px solid #fff;
+			}
+
+			&:after {
+				width: 5px;
+				height: 3px;
+				top: 5px;
+				right: 2px;
+				border-left: 2px solid #fff;
+				border-bottom: 2px solid #fff;
+			}
+		}
+
+		&__data {
+			font-size: 12px;
+			line-height: 18.3px;
+
+			span {
+				font-size: 10px;
+				line-height: 12.7px;
+			}
+		}
+
+		&__ethereum {
+			font-size: 14px;
+
+			.icon-md {
+				width: 21px;
+				height: 21px;
+			}
+		}
+
+		&__select {
+			border-radius: 13px;
+			margin-bottom: 9px;
+			height: 50px;
+
+			.nice-select {
+				font-size: 14px;
+				border-radius: 13px 0 0 13px;
+				width: 111px;
+
+				&:after {
+					width: 5px;
+					height: 5px;
+					top: 22px;
+					right: 32px;
+					border-right: 2px solid #fff;
+					border-bottom: 2px solid #fff;
+				}
+
+				.list {
+					border-radius: 13px 0 0 13px;
+				}
+			}
+		}
+
+		.btn {
+			border-radius: 13px;
+			font-size: 12px;
+			padding: 16px 0;
+
+			.icon-svg {
+				width: 14px;
+				height: 14px;
+				margin-right: 8px;
+			}
+		}
+	}
+
+
 	footer {
 		.container {
 			position: relative;
