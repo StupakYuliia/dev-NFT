@@ -109,9 +109,11 @@
 				padding: 7px 7px 10px;
 				max-width: 155px;
 				margin: 0 auto;
+				height: 210px;
 
 				&-title {
 					margin-bottom: 7px;
+					font-size: 11px;
 				}
 
 				&-bid-title {
@@ -128,13 +130,15 @@
 					border-radius: 5px;
 				}
 
-				.product .btn {
-					margin: -33px 0 0 auto;
-					border-radius: 8px;
+				.product {
+					.btn {
+						margin: -33px 0 0 auto;
+						border-radius: 8px;
 
-					&.btn-small {
-						font-size: 14px;
-						padding: 15px 25px;
+						&.btn-small {
+							font-size: 14px;
+							padding: 15px 25px;
+						}
 					}
 				}
 			}
@@ -194,12 +198,30 @@
 	}
 	.join-community {
 		padding: 0 0 145px;
+		overflow-x: hidden
 	}
 
 	.nft {
 		.container {
 			width: 315px;
 			height: 211px;
+		}
+	}
+
+	.discover {
+		padding: 75px 0 143px;
+
+		.container {
+			.section-title {
+				margin-bottom: 30px;
+				font-size: 30px;
+			}
+
+			.explore-marketplace {
+				&__content {
+					margin-bottom: 106px;
+				}
+			}
 		}
 	}
 }

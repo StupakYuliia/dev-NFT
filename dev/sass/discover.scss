@@ -1,0 +1,22 @@
+.discover {
+    padding: 110px 0 226px;
+
+	.container {
+		position: relative;
+
+		.section-title {
+			margin-bottom: 44px;
+		}
+
+		.explore-marketplace {
+			&__content {
+				margin-bottom: 176px;
+			}
+		}
+		.loader {
+			top: 0;
+			left: 50%;
+		}
+	}
+
+}

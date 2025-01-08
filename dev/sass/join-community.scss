@@ -171,8 +171,10 @@
 
 	.btn {
 		margin: 0 auto;
-		display: flex
-	;
+    	display: flex;
+    	max-width: 203px;
+    	font-size: 14px;
+    	padding: 18px 21px;
 	}
 }
 

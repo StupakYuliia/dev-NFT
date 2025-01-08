@@ -336,10 +336,11 @@
 		}
 
 		.btn {
-			font-size: 9px;
-			padding: 12px 13px;
-			line-height: 11px;
-			border-radius: 7px;
+			font-size: 8px;
+        	padding: 12px 13px;
+        	line-height: 11px;
+        	border-radius: 7px;
+        	max-width: 120px;
 		}
 	}
 
@@ -448,6 +449,13 @@
 		.tabs .active {
 			max-width: 690px;
 			margin: 0 auto;
+			justify-content: center;
+
+			.product {
+				.btn {
+					margin: -35px 0 0 auto;
+				}
+			}
 		}
 		span.loader {
 			left: calc(100% - 55%);
@@ -1216,6 +1224,105 @@
 				width: 14px;
 				height: 14px;
 				margin-right: 8px;
+			}
+		}
+	}
+
+	.leaderboard {
+		padding: 75px 0 125px;
+		.section-title {
+			margin-bottom: 30px;
+			font-size: 30px;
+		}
+
+		.explore-marketplace {
+			&__btn {
+				font-size: 10px;
+				padding: 10px 11px;
+				border-radius: 8px;
+
+				svg {
+					width: 16px;
+					height: 16px;
+					margin-right: .5px;
+				}
+			}
+		}
+	}
+
+	.creators {
+		padding: 75px 0 125px;
+
+		.section-title {
+			margin-bottom: 70px;
+			font-size: 30px;
+		}
+
+		&__cards {
+			row-gap: 40px;
+			column-gap: 40px;
+			margin-bottom: 90px;
+		}
+
+		&__card {
+			max-width: 310px;
+			border-radius: 15px;
+			box-shadow: 25px 13px 67px 0 rgba(191, 191, 191, 0.6);
+		}
+
+		&__img {
+			margin-bottom: 58px;
+
+			img {
+				height: 170px;
+				border-radius: 15px 15px 0 0;
+			}
+		}
+
+		&__avatar {
+			top: 124px;
+
+			img {
+				width: 93px;
+			}
+		}
+
+		&__username {
+			font-size: 20px;
+			line-height: 28.1px;
+			margin-bottom: 14px;
+		}
+
+		&__price {
+			margin-bottom: 26px;
+			padding: 0 22px;
+
+			&-items {
+				font-size: 10px;
+				line-height: 13.2px;
+
+				span {
+					font-size: 14px;
+					line-height: 21.5px;
+				}
+			}
+		}
+
+		&__products {
+			padding: 0 22px;
+			gap: 8px;
+			margin-bottom: 30px;
+
+			img {
+				width: 82px;
+			}
+
+			&-collection {
+				width: 82px;
+				height: 82px;
+				right: 26px;
+				line-height: 18.3px;
+				font-size: 16px;
 			}
 		}
 	}

@@ -1,0 +1,32 @@
+.leaderboard {
+    padding: 110px 0 200px;
+	.container {
+		position: relative;
+		.section-title {
+			margin-bottom: 45px;
+		}
+
+		.explore-marketplace {
+			&__nav {
+				margin-bottom: 98px;
+			}
+		}
+
+		.top-collection {
+			&__wrapper {
+				margin-bottom: 109px;
+			}
+
+			&__table {
+				thead {
+					color: #1A202C;
+				}
+			}
+		}
+
+		.loader {
+			left: 50%;
+			top: 0;
+		}
+	}
+}
